@@ -123,3 +123,12 @@ body {
 #main {
     display: none;
 }
+
+@media (max-width:450px) {
+    .wind-img {
+        width: 25%;
+        position: relative;
+        right: 0px;
+        top:3px;
+    }
+}
