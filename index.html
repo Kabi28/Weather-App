@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name..." id="input" autocomplete="off" spellcheck="false">
+            <button onclick="getWeather()"><img src="images/search.png"></button>
+            <div id="error">
+                Invalid City Name
+            </div>
+        </div>
+        <main id="main">
+            <div class="image">
+                <img id="weather" src="images/clouds.png">
+            </div>
+            <div class="deg">
+                <h1 id="deg-val">27°C</h1>
+            </div>
+            <div class="place">
+                <h3 id="place-name">New Delhi</h1>
+            </div>
+            <div class="data">
+                <div class="humitity">
+                    <div class="humitity-img">
+                        <img src="images/humidity.png">
+                    </div>
+                    <div class="humitity-val">
+                        <h3 id="humidity-data">50%</h3>
+                        <h4>Humidity</h4>
+                    </div>
+                </div>
+                <div class="wind">
+                    <div class="wind-img">
+                        <img src="images/wind.png">
+                    </div>
+                    <div class="wind-val">
+                        <h3 id="wind-data">47 km/h</h3>
+                        <h4>Wind Speed</h4>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
